@@ -9,12 +9,14 @@
 	color: white;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
+	text-shadow: none;
 }
 .header h1 + ul {
 	border-left: none;
 }
 .header li a {
 	color: white;
+	letter-spacing: 0.05em;
 }
 .menubar {
 	border-right: 1px solid #fda0b3;

@@ -20,9 +20,9 @@ All CSS should be in the SCSS directory (bring in vendor files, too)
 
 ### PHP Standards
 
-Most of our coding standards for PHP follow the WordPress Coding Standards.
+Most of our coding standards for PHP follow the <a href="http://make.wordpress.org/core/handbook/coding-standards/php/" target="_blank">WordPress Coding Standards</a>.
 
-<a href="http://make.wordpress.org/core/handbook/coding-standards/php/" target="_blank">View the WordPress PHP Coding Standards ></a>
+#### Single Quotes
 
 Use single quotes as much as possible. The exception is if you've got to alternate quote styles.
 

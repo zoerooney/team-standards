@@ -1,0 +1,9 @@
+.header {
+	background: #fb5e7e;
+	color: white;
+	border-bottom: 1px solid #fa3d63;
+}
+.header h1 {
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}

@@ -1,12 +1,11 @@
 .header {
-	background: #fb5e7e;
+/*	background: #fb5e7e;
 	color: white;
-	border-bottom: 1px solid #fa3d63;
+	border-bottom: 1px solid #fa3d63;*/
 }
 .header h1, 
 .header h1 a, 
 .header h1 a:visited {
-	color: white;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 	text-shadow: none;
@@ -15,9 +14,12 @@
 	border-left: none;
 }
 .header li a {
-	color: white;
+/*	color: white;*/
 	letter-spacing: 0.05em;
 }
 .menubar {
-	border-right: 1px solid #fda0b3;
+	/*border-right: 1px solid #fda0b3;*/
+}
+.content-root {
+	background-color: #f6f6dd;
 }

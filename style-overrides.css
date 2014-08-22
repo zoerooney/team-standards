@@ -20,6 +20,6 @@
 .menubar {
 	/*border-right: 1px solid #fda0b3;*/
 }
-.content-root {
+body:not(.no-literate) .content-root {
 	background-color: #f6f6dd;
 }

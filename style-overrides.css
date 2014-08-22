@@ -3,7 +3,19 @@
 	color: white;
 	border-bottom: 1px solid #fa3d63;
 }
-.header h1 {
+.header h1, 
+.header h1 a, 
+.header h1 a:visited {
+	color: white;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
+}
+.header h1 + ul {
+	border-left: none;
+}
+.header li a {
+	color: white;
+}
+.menubar {
+	border-right: 1px solid #fda0b3;
 }

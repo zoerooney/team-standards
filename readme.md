@@ -20,6 +20,12 @@ All CSS should be in the SCSS directory (bring in vendor files, too)
 
 ### PHP Standards
 
+Use single quotes as much as possible. The exception is if you've got to alternate quote styles.
+
+```php
+<?php $variable = get_field( 'field_name' ); ?>
+```
+
 ### Keep Things Updated
 
 ### Advanced Custom Fields

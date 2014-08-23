@@ -87,9 +87,24 @@ if ( is_front_page() ) {
 ?>
 ```
 
-If you're using Sublime Text, there's a nice package for highlighting opening/closing pairs called [Bracket Highlighter](https://github.com/facelessuser/BracketHighlighter).
+The downfall is that text editors usually can't match up opening/ closing lines with this syntax but I think it's worth it.
 
-If you've got anything more than a small amount of HTML in your PHP, close out and reopen the PHP rather than echoing out a ton of stuff.
+If you've got anything more than a small amount of HTML in your PHP, close out and reopen the PHP rather than echoing out a ton of stuff. But don't use them between lines of PHP where there's no HTML mixed in:
+
+```php
+<?php
+if ( $query->have_posts() ) :
+	while ( $query->have_post() ) : $query->the_post(); ?>
+		<a href="<?php the_permalink(); ?>">
+			<?php the_post_thumbnail( 'medium' ); ?>
+			<h2><?php the_title(); ?></h2>
+		</a>
+	<?php endwhile;
+endif;
+?>
+```
+
+I find it more readable to keep the opening and closing PHP tags on the same line in most cases, with the sometimes exception of the very first opening and very last closing tags.
 
 ### Variable Naming
 

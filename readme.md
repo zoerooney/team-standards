@@ -60,9 +60,8 @@ More spaces make for better readibility. Per the WordPress standards:
 
 ### Braces
 
-I prefer the alternate syntax (colons and words) to curly braces as I find it easier to debug (matching up ifs and endifs and whiles and endwhiles is easier than a mess of braces).
+I prefer the alternate syntax (colons and words) to curly braces as I find it easier to debug (matching up ifs and endifs and whiles and endwhiles is easier than a mess of braces):
 
-**This Way:**
 ```php
 <?php 
 if ( is_front_page() ) :
@@ -72,18 +71,6 @@ if ( is_front_page() ) :
 		endif;
 	endforeach;
 endif;
-?>
-```
-**Not This Way:**
-```php
-<?php 
-if ( is_front_page() ) {
-	foreach ( $images as $image ) {
-		if ( $title != 'nope' ) {
-			// do some things
-		}
-	}
-}
 ?>
 ```
 

@@ -60,10 +60,7 @@ More spaces make for better readibility. Per the WordPress standards:
 
 ### Braces
 
-I prefer the alternate syntax (colons and words) to curly braces as I find it easier to debug (matching up ifs and endifs and whiles and endwhiles is easier than a mess of braces).
-
-The downfall is that text editors usually can't match up opening/ closing lines with this syntax but I think it's worth it.
-
+I prefer the alternate syntax (colons and words) to curly braces as I find it easier to debug (matching up ifs and endifs and whiles and endwhiles is easier than a mess of braces). The downfall is that text editors usually can't match up opening/ closing lines with this syntax but I think it's worth it.
 ```php
 <?php 
 if ( is_front_page() ) :
@@ -75,8 +72,8 @@ if ( is_front_page() ) :
 endif;
 ?>
 ```
-If you've got anything more than a small amount of HTML in your PHP, close out and reopen the PHP rather than echoing out a ton of stuff. But don't use them between lines of PHP where there's no HTML mixed in:
 
+If you've got anything more than a small amount of HTML in your PHP, close out and reopen the PHP rather than echoing out a ton of stuff. But don't use them between lines of PHP where there's no HTML mixed in. I find it more readable to keep the opening and closing PHP tags on the same line in most cases, with the sometimes exception of the very first opening and very last closing tags.
 ```php
 <?php
 if ( $query->have_posts() ) :
@@ -90,7 +87,6 @@ endif;
 ?>
 ```
 
-I find it more readable to keep the opening and closing PHP tags on the same line in most cases, with the sometimes exception of the very first opening and very last closing tags.
 
 ### Variable Naming
 

@@ -12,6 +12,17 @@ Comment everything!
 
 All CSS should be in the SCSS directory (bring in vendor files, too)
 
+### Selectors
+
+Use generic, transferable selectors - don't target specific widgets where the widget ID or number may change. Selectors should account for the ways content changes in the CMS may impact the markup and the available selectors.
+
+### Media Queries
+
+Media queries should be with their "default" style counterparts, rather than using a separate file for all media queries.
+
+Breakpoints should be set as variables in `_base.scss` and only variables should be used in other files.
+
+
 ## JS/ jQuery
 
 ## Workflow Notes
@@ -97,6 +108,33 @@ $twitter_url = get_the_author_meta( 'twitter' );
 ```
 
 ## Keep Things Updated
+
+Every time you log into a **development site** you can and should run any available updates, including those for core, plugins, and any extra themes. (Bonus points for taking the time to delete any plugins or themes that are no longer necessary.)
+
+Production sites are a different game, those we only update under certain circumstances (retainer clients, or if that's what we're specifically working on), but development sites should always be up to date.
+
+## Build Flexibly and Reusably
+
+Our themes should be as flexible as possible, with all modules, templates, and moving parts balancing being modular and reusable with being as unbreakable as possible.
+
+### Always Use Template Names
+
+Instead of relying on page slugs to apply custom templates to the correct pages, always name your page templates using the comments at the top of the page, e.g.:
+
+```html
+/*
+ * Template Name: Custom Template
+ * /
+```
+This is more flexible and reliable in the long run.
+
+The only exception is a static home page, in which case you don't need to name the template because the Reading Settings handle template assignment for the `front-page.php` file.
+
+### Always Use Defined Image Sizes
+
+The only time we every access a direct image URL rather than a named size (custom or via Settings > Media) is when we're opening an image in a lightbox or providing a download link to the original file.
+
+All other implementations should use a defined size to prevent unreasonably large or incorrectly sized images from loading and being resized by the CSS.
 
 ## Advanced Custom Fields
 
